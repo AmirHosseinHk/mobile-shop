@@ -1,0 +1,9 @@
+.errorbox-msg{
+    background-color: #ff4f4f;
+    color: var(--white);
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 20px;
+
+}

@@ -1,0 +1,75 @@
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+}
+
+.profileBox{
+    display: flex;
+    align-items: center;
+}
+
+.profileBox img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.profileBox h3{
+    font-size: 1.3rem;
+}
+
+.profileBox h5{
+    font-size: 1.1rem;
+    color: #858585;
+    margin-top: 5px;
+}
+
+.leftHeader{
+    display: flex;
+    column-gap: 20px;
+}
+
+.search-box{
+    background-color: var(--white);
+    width: 400px;
+    border-radius: 15px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 10px;
+    background-color: unset;
+}
+
+.search-box button{
+    outline: none;
+    border: none;
+    width: 150px;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding:3px 20px ;
+    height: 40px;
+    width: 135px;
+}
+
+.leftHeader-icon{
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

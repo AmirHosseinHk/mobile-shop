@@ -1,0 +1,50 @@
+.comments-main {
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.comnts-table {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.comnts-table tr {
+    text-align: center;
+}
+
+.comnts-table th, .comnts-table td {
+    padding: 20px;
+}
+
+.comnts-table button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.comnts-table tbody tr td button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-container{
+    background-color: var(--white);
+    padding: 20px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.comment-delete-modal{
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
