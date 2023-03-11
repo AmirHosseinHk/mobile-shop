@@ -1,14 +1,16 @@
 .add-new-product-section{
     margin-top: 60px;
+    
 }
 
 .add-product-title{
     font-size: 2rem;
+    color: var(--white);
 }
 
 .add-product-form{
     margin-top: 30px;
-    background-color: var(--white);
+    background-color: #40407a;
     padding: 20px;
     border-radius: 20px;
     display: flex;

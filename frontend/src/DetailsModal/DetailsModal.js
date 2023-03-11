@@ -17,6 +17,7 @@ function DetailsModal({onHideState,children }) {
   });
   return (
     <div className="modal-parent active">
+      
      {children}
     </div>
   );

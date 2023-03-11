@@ -162,12 +162,19 @@ function ProductTable({getAllProducts,AllProducts}) {
 
 
         <table className="detail-modal-table">
-          <thead style={{ width: "100%" }}>
+          
+          <thead style={{ width: "100%" ,position:'relative'}} >
+          <button type="button" class="btn-close" aria-label="Close" style={{position:'absolute',left:'0'}} onClick={()=>{
+            setIsShowDetailModal(false)
+          }}></button>
+
             <tr className="detail-modal-tr">
               <td>محبوبیت</td>
-              <td>فروش</td>
-              <td>رنگبندی</td>
+              <td>حافظه داخلی(گیگابایت)</td>
+              <td>ظرفیت باتری (mAh)</td>
+              
             </tr>
+            
           </thead>
           <tbody>
             <tr>
@@ -181,6 +188,7 @@ function ProductTable({getAllProducts,AllProducts}) {
       </DetailsModal>}
       {
         isShowEditModal && <EditMidal onClose={setIsShowEditModal} onSubmit={editModalHndler}>
+          
           <div className="edit-product-form-group">
             <span><AiOutlineDollarCircle /> </span>
             <input type="text" className="edit-product-form-group-input" onChange={(e) => setNewTitleInfo(e.target.value)} value={newTitleInfo} placeholder="عنوان جدید را وارد کنید" />
@@ -203,11 +211,11 @@ function ProductTable({getAllProducts,AllProducts}) {
           </div>
           <div className="edit-product-form-group">
             <span><AiOutlineDollarCircle /> </span>
-            <input type="text" className="edit-product-form-group-input" onChange={(e) => setNewSaleInfo(e.target.value)} value={newSaleInfo} placeholder="میزان فروش جدید را وارد کنید" />
+            <input type="text" className="edit-product-form-group-input" onChange={(e) => setNewSaleInfo(e.target.value)} value={newSaleInfo} placeholder="حافظه ی داخلی  جدید را وارد کنید" />
           </div>
           <div className="edit-product-form-group">
             <span><AiOutlineDollarCircle /> </span>
-            <input type="text" className="edit-product-form-group-input" onChange={(e) => setNewColorsInfo(e.target.value)} value={newColorsInfo} placeholder=" تعداد رنگبندی جدید را وارد کنید" />
+            <input type="text" className="edit-product-form-group-input" onChange={(e) => setNewColorsInfo(e.target.value)} value={newColorsInfo} placeholder="  ظرفیت باتری جدید را وارد کنید" />
           </div>
         </EditMidal>
       }

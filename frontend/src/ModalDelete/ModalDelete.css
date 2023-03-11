@@ -12,6 +12,7 @@
     left: 0;
     visibility: hidden;
     opacity: 0;
+    
 }
 
 .modal-parent.active{
@@ -23,6 +24,7 @@
     background-color: var(--white);
     padding: 20px;
     border-radius: 12px;
+    width: 100px;
 }
 
 .modal-title{

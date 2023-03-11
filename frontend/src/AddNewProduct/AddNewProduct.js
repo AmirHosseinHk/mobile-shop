@@ -78,7 +78,7 @@ function AddNewProduct({ getAllProducts }) {
                         <input value={newAddedPopularity} type="text" className='add-product-input' onChange={(e) => setNewAddedPopularity(e.target.value)} placeholder='میزان محبوبیت محصول را بنویسید' />
                     </div>
                     <div className="add-product-inp-grp">
-                        <input value={newAddedColors} type="text" className='add-product-input' onChange={(e) => setNewAddedColors(e.target.value)} placeholder='تعداد رنگ بندی محصول را بنویسید' />
+                        <input value={newAddedColors} type="text" className='add-product-input' onChange={(e) => setNewAddedColors(e.target.value)} placeholder='ظرفیت باتری   محصول را بنویسید' />
                     </div>
                     <div className="add-product-inp-grp">
                         <input value={newAddedPrice} type="text" className='add-product-input' onChange={(e) => setNewAddedPrice(e.target.value)} placeholder='قیمت محصول را بنویسید' />
@@ -87,7 +87,7 @@ function AddNewProduct({ getAllProducts }) {
                         <input value={newAddedImg} type="text" className='add-product-input' onChange={(e) => setNewAddedImg(e.target.value)} placeholder='آدرس عکس محصول را بنویسید' />
                     </div>
                     <div className="add-product-inp-grp">
-                        <input value={newAddedSale} type="text" className='add-product-input' onChange={(e) => setNewAddedSale(e.target.value)} placeholder='میزان فروش محصول را بنویسید' />
+                        <input value={newAddedSale} type="text" className='add-product-input' onChange={(e) => setNewAddedSale(e.target.value)} placeholder='حافظه ی داخلی  محصول را بنویسید' />
                     </div>
                 </div>
                 <button className='add-product-submit' onClick={(e) => AddnewProductSubmit(e)}>ثبت محصول</button>

@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const router=useRoutes(routes)
   return (
-    <div>
+    <div className='App'>
     <Sidebar />
     <div className="main">
     <Header />

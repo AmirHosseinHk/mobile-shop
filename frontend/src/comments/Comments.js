@@ -87,7 +87,7 @@ function Comments() {
   return (
     
       <div>
-        {AllComments.length ? <div className="comments-main">
+        {AllComments.length ? 
         <table className='comnts-table'>
           <thead>
             <tr>
@@ -137,6 +137,7 @@ function Comments() {
 
           </tbody>
         </table>
+        :        <ErrorBox msg='هیچ نظری یافت نشد' />}
         <CommentModal onHide={commentBodyShow}>
           <p className='comment-container'>
             {commentBody}
@@ -159,7 +160,7 @@ function Comments() {
         <CommentDeleteModal onDelete={isShowAcceptModal} title={'آیا از تایید اطمینان دارید؟'} accept={acceptAcceptModal} reject={rejectAcceptModal}></CommentDeleteModal>
         <CommentDeleteModal onDelete={isShowRejectModal} title={'آیا از رد اطمینان دارید؟'} accept={acceptRejectModal} reject={rejectRejectModal}></CommentDeleteModal>
 
-        </div>:        <ErrorBox msg='هیچ نظری یافت نشد' />}
+       
 
 
       </div>  

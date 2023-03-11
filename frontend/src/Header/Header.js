@@ -7,10 +7,10 @@ function Header() {
   return (
     <div className='main-header'>
         <div className="profileBox">
-            <img src="./img/4.jpg" alt="" />
+            <img src="./img/images.png" alt="" />
             <div className="profile-docs">
                 <h3>امیرحسین حکیمی نیری</h3>
-                <h5>برنامه نویس فرانت اند</h5>
+                <h5>مدیر فروش</h5>
             </div>
 
         </div>
